@@ -33,6 +33,8 @@ nav{
 main{
     min-height: 77vh;
     background-color: var(--azul-claro);
+    text-align: center;
+    padding-bottom: 100px;
 }
 
 
@@ -58,12 +60,9 @@ main{
     border-radius: 5px;
 }
 
-
-
-
 #logo{
     width: 150px;
-    padding-top: 100px;
+    
 }
 
 
@@ -77,16 +76,13 @@ a[href="#"]{
     background-color: var(--azul-menos-oscuro);
 }
 
-section{
+section, article{
     text-align: center;
-    padding-left: 150px;
 }
 
-
-#logo, section{
+#logo, section, h3{
     display: inline-block;
 }
-
 
 footer{
     height: 8vh;
@@ -94,4 +90,21 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+#contacto{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    border-radius: 50px;
+    border: 2px solid var(--azul-mas-claro);
+    display: inline-block;
+}
+
+h3{
+    background-color: var(--azul-mas-claro);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(212, 141, 7);
+    box-sizing: border-box;
 }

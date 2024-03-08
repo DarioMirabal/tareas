@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilo del encabezado */
+  header {
+    background-color: #003366; /* Oscuro azul */
+    color: white;
+    text-align: center;
+  }
+  
+  /* Estilo del logo y de la imagen de portada */
+  #logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px; 
+  }
+  
+  #portada {
+    height: 200px;
+    background-image: url('assets/images/portada2.jpg'); 
+    background-size: cover;
+  }
+  
+/* Estilo general para la barra de navegación */
+nav {
+    background-color: #005f73; /* Color de fondo de la barra de navegación */
+    padding: 10px 0;
+  }
+  
+  #ancors-containers {
+    display: flex;
+    justify-content: center; /* Centra los enlaces en la barra de navegación */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff; /* Color de texto de los enlaces */
+    margin: 0 20px; /* Espaciado entre enlaces */
+    font-size: 18px; /* Tamaño del texto de los enlaces */
+    font-weight: bold; /* Hace que el texto de los enlaces sea en negrita */
+    transition: color 0.3s ease-in-out, transform 0.3s ease; /* Suaviza el cambio de color y transformación */
+    display: inline-block; /* Permite la transformación */
+  }
+  
+  nav a:hover, nav a:focus {
+    color: #ffb703; /* Cambia el color del texto al pasar el mouse por encima */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+  }
+  
+  
+  /* Estilo del contenido principal */
+  main {
+    padding: 20px;
+  }
+  
+  h2, h3 {
+    color: #003366; /* Oscuro azul */
+  }
+  
+  article {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Estilo del pie de página */
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  h2, h3{
+    text-align: center;
+    background-color: #003366;
+    color: #f0f0f0;
+    border-radius: 25px; 
+  }
+
+  #contacto{
+    background-color: #003366;
+    color: white;
+    padding: 25px;
+    border-radius: 50px;
+    border: 2px solid var(--azul-mas-claro);
+    text-align: center;
+}

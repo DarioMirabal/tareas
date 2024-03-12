@@ -3,34 +3,34 @@
     margin: 0;
 }
 
+/* Estilo del encabezado */
+header {
+  background-color: #003366; /* Oscuro azul */
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.portada {
+  height: 200px;
+  background-image: url('assets/images/portada2.jpg'); 
+  background-size: cover;
+}
 
 /* Estilo general del cuerpo */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-  }
-  
-  /* Estilo del encabezado */
-  header {
-    background-color: #003366; /* Oscuro azul */
-    color: white;
-    text-align: center;
+    background-color: #ffffff;
   }
   
   /* Estilo del logo y de la imagen de portada */
-  #logo {
+  .logo {
     display: block;
     margin: 0 auto;
     width: 150px; 
   }
   
-  #portada {
-    height: 200px;
-    background-image: url('assets/images/portada2.jpg'); 
-    background-size: cover;
-  }
   
 /* Estilo general para la barra de navegación */
 nav {
@@ -38,13 +38,11 @@ nav {
     padding: 10px 0;
   }
   
-  #ancors-containers {
+  .ancors-containers {
     display: flex;
-    justify-content: center; /* Centra los enlaces en la barra de navegación */
-    align-items: center;
-    list-style: none;
-    padding: 0;
-  }
+    justify-content: center;
+    gap: 40px;
+}
   
   nav a {
     text-decoration: none;
@@ -57,7 +55,7 @@ nav {
   }
   
   nav a:hover, nav a:focus {
-    color: #ffb703; /* Cambia el color del texto al pasar el mouse por encima */
+    color: #de0000; /* Cambia el color del texto al pasar el mouse por encima */
     transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
   }
   
@@ -65,19 +63,55 @@ nav {
   /* Estilo del contenido principal */
   main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  h2, h3 {
-    color: #003366; /* Oscuro azul */
-  }
   
   article {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+
   }
+  
+  
+  h2, h3 {
+    color: #ffffff; /* Oscuro azul */
+  }
+  
+  h2{
+    color: #f0f0f0;
+    border-radius: 15px;
+  }
+  
+  .subtitulos{
+    background-color: #003366; 
+    border-radius: 25px;
+    padding: 10px;
+}
+
+h3{
+    display: inline-block;
+  }
+
+
+  #contacto{
+    background-color: #003366;
+    color: white;
+    padding: 25px;
+    border-radius: 50px;
+    border: 2px solid var(--azul-mas-claro);
+    text-align: center;
+  }
+  
   
   /* Estilo del pie de página */
   footer {
@@ -90,18 +124,42 @@ nav {
     width: 100%;
   }
 
-  h2, h3{
-    text-align: center;
-    background-color: #003366;
-    color: #f0f0f0;
-    border-radius: 25px; 
+  .ordenada{
+    list-style: upper-alpha;
+  }
+  
+  .desordenada, .ordenada{
+    padding-left: 25px; 
+    list-style-position: inside;
   }
 
-  #contacto{
+  table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0 solid #003366;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #014b94;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #003366;
+  }
+  
+  table {
     background-color: #003366;
     color: white;
-    padding: 25px;
-    border-radius: 50px;
-    border: 2px solid var(--azul-mas-claro);
     text-align: center;
+    
+  }
+
+  th,td{
+    height: 60px;
+    border: 1px solid #000;
+  }
+  
+p, li{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

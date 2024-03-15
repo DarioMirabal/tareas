@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-propio.css">
+    <title>registration form</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Mighty Ducks Hockey League</h1>
+    
+        <nav>
+        <div class="ancors-containers">
+            <a href="#"> Home</a>
+            <a href="./aboutUs.html"> About MDHL</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./rules.html">Rules</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="#">Registration</a>
+        </div>
+        </nav>
+    
+            <div class="portada"></div>
+            <h2>Registration form</h2>
+    </header>
+
+    <main>
+        <form action="./show_data.html" method="get">
+        <article class="formulario">
+            <fieldset>
+                <legend>player information</legend>
+
+                <div class="personal-information">
+                    <label for="name"></label>
+                    <input type="text" name="players_first_name" id="name" placeholder="players first name">
+
+                    <label for="last_name"></label>
+                    <input type="text" name="last_name"  id="last_name" placeholder="last name">
+                </div>
+
+                <div class="personal-information">
+                    <label for="street_address"></label>
+                    <input type="text" name="street_address" id="street_address" placeholder="street address">
+
+                    <label for="city"></label>
+                    <input type="text" name="city" id="city" placeholder="city">
+
+                    <label for="zip_code"></label>
+                    <input type="text" name="zip_code" id="zip_code" placeholder="zip code">
+
+                    <label for="birth_date">birth date:</label>
+                    <input type="date" name="birth_date" id="birth_date">
+                </div>
+            </fieldset> <br>
+
+            <fieldset class="formulario">
+                <legend>gender:</legend>
+
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="gender">
+            
+                <label for="gender1">Female</label>
+                <input type="radio" name="gender" id="gender1">
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Grade:</legend>
+            
+                <label for="grade">pre-school</label>
+                <input type="radio" name="Grade" id="grade" value="pre-school">
+            
+                <label for="grade1">1st</label>
+                <input type="radio" name="Grade" id="grade1" value="first">
+            
+                <label for="grade2">2nd</label>
+                <input type="radio" name="Grade" id="grade2" value="second">
+                
+                <label for="grade3">3th</label>
+                <input type="radio" name="Grade" id="grade3" value="third">
+            
+                <label for="grade4">4th</label>   
+                <input type="radio" name="Grade" id="grade4" value="fourth">
+                
+                <label for="grade5">5th</label>         
+                <input type="radio" name="Grade" id="grade5" value="fifth">
+            </fieldset>
+        </article>
+
+            <h3>which elementary school do you live near?</h3>
+        <article class="formulario">
+            <fieldset>
+                <legend>closest school:</legend>
+
+                <label for="closest_school">Aj Katzenmaier</label>
+                <input type="radio" name="closest_school" id="closest_school" value="Aj_Katzenmaier">
+
+                <label for="closest_school1">Greenbay</label>
+                <input type="radio" name="closest_school" id="closest_school1" value="Greenbay">
+
+                <label for="closest_school2">Howard A Yeager</label>
+                <input type="radio" name="closest_school" id="closest_school2" value="Howard_A_Yeager">
+
+                <label for="closest_school3">Marjorie P Hart</label>
+                <input type="radio" name="closest_school" id="closest_school3" value="Marjorie_P_Hart">
+
+                <label for="closest_school4">North elementary</label>
+                <input type="radio" name="closest_school" id="closest_school4" value="North_elementary">
+
+                <label for="closest_school5">South elementary</label>
+                <input type="radio" name="closest_school" id="closest_school5" value="South_elementary">
+            </fieldset>
+        </article>
+
+            
+            <h3>what position(s) do you normally play? (check all the apply)</h3>
+        
+            <article class="formulario"> 
+            <fieldset>
+                <legend>positions</legend>
+
+                <label for="position">forward</label>
+                <input type="checkbox" name="position" id="position" value="forward">
+
+                <label for="position1">defense</label>
+                <input type="checkbox" name="position" id="position1" value="defense">
+
+                <label for="position2">midfield</label>
+                <input type="checkbox" name="position" id="position2" value="midfield">
+
+                <label for="position3">goalkeeper</label>
+                <input type="checkbox" name="position" id="position3" value="goalkeeper">
+            </fieldset>
+        </article> 
+
+            <h3>Uniform size</h3>
+        <article class="formulario">
+            <fieldset>
+                <legend>Uniform</legend>
+
+                <label for="Uniform">youth normal</label>
+                <input type="radio" name="Uniform" id="Uniform" value="youthyouth_medium">
+
+                <label for="Uniform1">youth medium</label>
+                <input type="radio" name="Uniform" id="Uniform1" value="youth_medium">
+
+                <label for="Uniform2">youth large</label>
+                <input type="radio" name="Uniform" id="Uniform2" value="youth_large">
+
+                <label for="Uniform3">small</label>
+                <input type="radio" name="Uniform" id="Uniform3" value="small">
+
+                <label for="Uniform4">medium</label>
+                <input type="radio" name="Uniform" id="Uniform4" value="medium">
+
+                <label for="Uniform5">midfield</label>
+                <input type="radio" name="Uniform" id="Uniform5" value="large">
+
+                <label for="Uniform6">goalkeeper</label>
+                <input type="radio" name="Uniform" id="Uniform6" value="estra-large">
+            </fieldset>
+            
+            <button>submit</button>
+        </article> 
+        </form>
+
+            <h3>Permission to play</h3>
+        <article class="formulario">
+            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation
+                By signing below, I herebyagree andauthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p><br>
+                
+                <fieldset>
+                    <label for="signature"></label>
+                    <input type="text" name="signature" id="signature" placeholder="parent/guardian signature">
+
+                    <label for="date">date</label>
+                    <input type="date" name="date" id="date">
+                </fieldset>
+        </article> 
+
+
+        <div class="mapas-container">
+          <div class="mapas-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23598.245933370283!2d-87.88342132013246!3d42.325875098901136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PRE-K)!5e0!3m2!1ses-419!2sar!4v1710462578442!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.780653881633!2d-87.86539662463643!3d42.325876971196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f9393cb3cefdb%3A0x62f2d1d35b7eed22!2sA.J.%20Katzenmaier%20Academy!5e0!3m2!1ses-419!2sar!4v1710462459208!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="mapas-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.780653881633!2d-87.86539662463643!3d42.325876971196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f9393cb3cefdb%3A0x62f2d1d35b7eed22!2sA.J.%20Katzenmaier%20Academy!5e0!3m2!1ses-419!2sar!4v1710462651131!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.2700630060885!2d-87.8564560246371!3d42.31543827119702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PRE-K)!5e0!3m2!1ses-419!2sar!4v1710462678980!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mighty Ducks Hockey League</p>
+    </footer>
+</body>
+</html>
+
+
+
+
